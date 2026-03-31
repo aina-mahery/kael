@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#3b82f6" />
+  <title>Joyeux anniversaire Kaël</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb bg-orb--1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--2" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--3" aria-hidden="true"></div>
+
+  <main class="app">
+    <section class="book-stage" aria-label="Livre photo d'anniversaire">
+      <div class="book-shell">
+        <div class="book-shadow" aria-hidden="true"></div>
+
+        <div class="book" id="birthdayBook" data-open="false">
+          <article class="cover" id="coverPage" role="button" tabindex="0" aria-label="Ouvrir la carte d'anniversaire">
+            <div class="cover__inner">
+              <div class="cover__grain" aria-hidden="true"></div>
+              <div class="cover__spine" aria-hidden="true"></div>
+              <div class="cover__foil" aria-hidden="true"></div>
+
+              <div class="cover__content">
+                <div class="cover__top">
+                  <p class="eyebrow">Ton premier carte d'anniversaire digital</p>
+                  <h1>Joyeux anniversaire<br><span>ANDRIATSIAROVANA Mihaja Kaël</span> 🎉</h1>
+                  <p class="lead">Un livre photo interactif créé spécialement pour toi, pour revivre chaque année avec style, émotion et une vraie sensation de pages qui tournent.</p>
+                </div>
+
+                <div class="cover__center" aria-hidden="true">
+                  <div class="cover-emblem">
+                    <div class="cover-emblem__ring"></div>
+                    <div class="cover-emblem__core">
+                      <div class="cake">
+                        <div class="cake__plate"></div>
+                        <div class="cake__layer cake__layer--1"></div>
+                        <div class="cake__layer cake__layer--2"></div>
+                        <div class="cake__icing"></div>
+                        <div class="cake__drip cake__drip--1"></div>
+                        <div class="cake__drip cake__drip--2"></div>
+                        <div class="cake__drip cake__drip--3"></div>
+                        <div class="cake__candle"></div>
+                        <div class="cake__flame"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cover__bottom">
+                  <div class="open-pill">Clique / touche pour ouvrir</div>
+                  <p class="cover-note">Puis touche la photo pour tourner la page.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <section class="pages" aria-live="polite">
+            <div class="pages__frame"></div>
+            <div class="pages__edge pages__edge--top" aria-hidden="true"></div>
+            <div class="pages__edge pages__edge--right" aria-hidden="true"></div>
+            <div class="pages__edge pages__edge--bottom" aria-hidden="true"></div>
+
+            <header class="pages__header">
+              <div>
+                <p class="eyebrow eyebrow--inside">Album souvenir</p>
+                <h2>Chaque page raconte une année ✨</h2>
+              </div>
+              <button class="ghost-btn" id="replayBtn" type="button">Refermer le livre</button>
+            </header>
+
+            <div class="album-layout">
+              <aside class="year-rail" id="timeline" aria-label="Années disponibles"></aside>
+
+              <section class="page-viewer">
+                <button class="nav-btn nav-btn--left" id="prevBtn" type="button" aria-label="Photo précédente">‹</button>
+
+                <div class="page-stack" id="pageStack">
+                  <div class="page-stack__sheet page-stack__sheet--under page-stack__sheet--under-1" aria-hidden="true"></div>
+                  <div class="page-stack__sheet page-stack__sheet--under page-stack__sheet--under-2" aria-hidden="true"></div>
+
+                  <button class="sheet" id="photoSheet" type="button" aria-label="Tourner la page vers la photo suivante">
+                    <div class="sheet__shadow" aria-hidden="true"></div>
+                    <div class="sheet__page">
+                      <div class="sheet__front">
+                        <div class="photo-card" id="photoCard">
+                          <div class="photo-meta">
+                            <div class="age-chip" id="ageBadge">1 an</div>
+                            <div class="counter-chip" id="counterChip">01 / 08</div>
+                          </div>
+
+                          <div class="photo-frame" id="photoFrame" style="--media-ratio: 1260/1681;">
+                            <img id="memoryImage" alt="Photo souvenir de Kaël" />
+                          </div>
+
+                          <div class="photo-footer">
+                            <div>
+                              <p class="photo-label">Souvenir</p>
+                              <h3 id="memoryTitle">Année 1</h3>
+                            </div>
+                            <span class="tap-hint">Tape pour tourner</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="sheet__back" aria-hidden="true">
+                        <div class="page-back-design">
+                          <div class="page-back-design__ring"></div>
+                          <div class="page-back-design__text">Page suivante</div>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+                <button class="nav-btn nav-btn--right" id="nextBtn" type="button" aria-label="Photo suivante">›</button>
+              </section>
+            </div>
+
+            <footer class="pages__footer">
+              <p class="caption" id="memoryCaption">1 an • Un nouveau chapitre commence.</p>
+            </footer>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
