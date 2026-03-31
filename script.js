@@ -1,12 +1,3 @@
-/*
-  Livre photo anniversaire — JS vanilla amélioré
-  Images attendues dans le même dossier :
-  photo-1.jpg, photo-2.jpg, photo-3.jpg, photo-4.jpg,
-  photo-5.jpg, photo-6.jpg, photo-7.jpg, photo-8.jpeg
-
-  Les dimensions source sont utilisées pour ajuster l'affichage sans jamais les montrer à l'utilisateur.
-*/
-
 const memories = [
   { age: 1, src: 'photo-1.jpg', width: 1260, height: 1681, title: 'Année 1', caption: '1 an • Un nouveau chapitre commence.' },
   { age: 2, src: 'photo-2.jpg', width: 1920, height: 2560, title: 'Année 2', caption: '2 ans • Encore plus de rires et de découvertes.' },
