@@ -10,7 +10,7 @@
 const memories = [
   { age: 1, src: 'photo-1.jpg', width: 1260, height: 1681, title: 'Année 1', caption: '1 an • Un nouveau chapitre commence.' },
   { age: 2, src: 'photo-2.jpg', width: 1920, height: 2560, title: 'Année 2', caption: '2 ans • Encore plus de rires et de découvertes.' },
-  { age: 3, src: 'photo-3.jpg', width: 3078, height: 5472, title: 'Année 3', caption: '3 ans • Une énergie incroyable et des souvenirs précieux.' },
+  { age: 3, src: 'photo-3.JPG', width: 3078, height: 5472, title: 'Année 3', caption: '3 ans • Une énergie incroyable et des souvenirs précieux.' },
   { age: 4, src: 'photo-4.jpg', width: 3456, height: 4608, title: 'Année 4', caption: '4 ans • Des moments joyeux à collectionner.' },
   { age: 5, src: 'photo-5.jpg', width: 1536, height: 2048, title: 'Année 5', caption: '5 ans • Un sourire qui illumine tout autour de toi.' },
   { age: 6, src: 'photo-6.jpg', width: 3024, height: 4032, title: 'Année 6', caption: '6 ans • Une nouvelle année pleine d\'aventures.' },
